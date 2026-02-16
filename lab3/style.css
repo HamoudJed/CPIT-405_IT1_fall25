@@ -1,0 +1,21 @@
+.image-preview{
+    display: inline-block;
+    padding: 18px;
+    background: white;
+    border-top: 18px solid #7fd3ff;
+    border-right: 18px solid #ff9db8;
+    border-bottom: 18px solid #7dff83;
+    border-left: 18px solid #f3d7b6;
+}
+
+.image-preview img{
+    display: block;
+    width: 220px;
+    height: auto;
+}
+
+p > span { color: red; }
+#header span { color: pink; }
+span { color: green; }
+#header *:last-child { color: orange; }
+#header span:first-child:hover { color: blue; }
