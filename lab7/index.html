@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7 - Unsplash Image Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🖼️ Unsplash Image Search</h1>
+            <p>Search for beautiful images using three different async methods</p>
+        </header>
+
+        <div class="input-section">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Search for images..." 
+                class="search-input"
+            >
+            <button id="searchBtn" class="search-btn">Search</button>
+        </div>
+
+        <div class="method-selector">
+            <button class="method-btn active" data-method="xhr">
+                XMLHTTPRequest
+            </button>
+            <button class="method-btn" data-method="promise">
+                Fetch + Promise
+            </button>
+            <button class="method-btn" data-method="async">
+                Fetch + Async/Await
+            </button>
+        </div>
+
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Loading images...</p>
+        </div>
+
+        <div id="error" class="error" style="display: none;"></div>
+
+        <div id="gallery" class="gallery"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
