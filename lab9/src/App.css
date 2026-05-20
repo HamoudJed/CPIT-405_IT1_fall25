@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: #2b2b2b;
+  margin: 15px;
+  padding: 15px;
+}
+
+.navbar a {
+  color: #dddddd;
+  text-decoration: none;
+  margin-right: 25px;
+  font-size: 13px;
+}
+
+.content {
+  flex: 1;
+  padding: 15px;
+}
+
+.search-area {
+  display: flex;
+  margin: 10px 5px 25px 5px;
+}
+
+.search-area input {
+  width: 70%;
+  padding: 13px;
+  border: 1px solid #555;
+  font-size: 14px;
+}
+
+.search-area button {
+  background-color: #008c89;
+  color: white;
+  border: none;
+  padding: 0 25px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 180px);
+  gap: 30px 25px;
+  justify-content: center;
+}
+
+.recipe-card {
+  width: 180px;
+  min-height: 180px;
+  padding: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  background-color: white;
+}
+
+.recipe-card img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.recipe-title {
+  display: block;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.details {
+  padding: 15px 0;
+}
+
+.details h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.details h2 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.details-image {
+  width: 330px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.summary {
+  line-height: 1.2;
+  font-size: 13px;
+}
+
+.footer {
+  background-color: #f2f2f5;
+  text-align: center;
+  padding: 25px;
+  font-size: 13px;
+}
